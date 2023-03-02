@@ -1,0 +1,240 @@
+/* Gerais */
+body {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+.row {
+    margin: 0;
+}
+
+/* Barra de navegação */
+header, .navbar {
+    background-image: linear-gradient(to top, transparent,  rgba(30, 7, 238, 0.966));
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 25%;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: snow;
+}
+
+.navbar-brand:hover { /* cor da navbar-brand continuará fixa */
+    color: snow;
+}
+
+#navbar-links a{
+    color: snow;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+}
+
+/* Carousel */
+.container-fluid {
+    padding: 0; /* a imagem ficou 100% de largura */
+}
+
+.carousel-indicators .active {
+    background-color: rgb(48, 137, 209);
+  }
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption h2{
+    -webkit-text-stroke: 0.5px yellow;
+    color: rgb(48, 137, 209);
+}
+
+#mainSlider .carousel-caption p {
+    -webkit-text-stroke: 0.5px rgb(15, 17, 121);
+    color: rgba(7, 7, 7, 0.767);
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Cards */
+.main-title {
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+ 
+.main-title::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+.list-group-item {
+    text-align: center;
+}
+
+#cards-pokemons {
+    background-image: url(../img/Background-Pokemon-FIX.jpg);
+    background-position: top;
+}
+
+.card h5 {
+    text-align: center;
+}
+
+.card p{
+    text-align: justify;
+}
+
+.card {
+    margin-bottom: 30px;
+    border-color: black;
+}
+
+.card .type-li {
+    color: #444;
+}
+
+.card .type-psychic {
+    color: goldenrod;
+}
+
+.card .type-gram {
+    color: green;
+}
+
+.card .type-toxic {
+    color: rgb(46, 29, 29);
+}
+
+.card .type-water {
+    color: rgb(38, 139, 185);
+}
+
+.card .type-ice {
+    color: grey;
+}
+
+.card .type-dragon {
+    color: rgb(167, 51, 74);
+}
+
+.card .type-flying {
+    color: thistle;
+}
+
+.card .type-fighter {
+    color: sienna;
+}
+
+.card .type-normal {
+    color: rgba(7, 7, 7, 0.767);
+}
+
+.card .type-fairy {
+    color: pink;
+}
+
+.card .type-electric {
+    color: rgb(156, 156, 16);
+}
+
+.card .type-ground {
+    color: chocolate;
+}
+
+.card .type-rock {
+    color: brown;
+}
+
+.card .type-fire {
+    color: red;
+}
+ 
+/* Fique por dentro das novidades */
+.email {
+    background-image: url(../img/togepi2.jpg);
+    background-position: top;
+    text-align: center;
+    background-color: snow
+}
+
+.email p {
+    margin-bottom: 40px;
+}
+
+#email-input {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-color:  rgb(48, 137, 209);
+    box-sizing: border-box;
+    display: inline;
+    width: 40%;
+    height: 40px;
+}
+
+#button-one {
+    border-radius: 0;
+    border: 1px solid rgb(48, 137, 209);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(48, 137, 209);
+    box-sizing: border-box;
+    color: white;
+    height: 40px;
+    margin-left: -4px;
+    padding: 0 30px;
+}
+
+#button-one:hover {
+    background-color: white;
+    color: rgb(48, 137, 209);
+    text-shadow: 2% 0 rgb(48, 137, 209);
+    transition: 1s;
+}
+
+/* Contatos/Footer/Rodapé */
+#contact-area {
+    text-align: center;
+}
+
+.contact-title {
+    color: rgb(48, 137, 209);
+}
+
+.img-class {
+    margin-bottom: 30px;
+}
+
+/* Copy */
+
+#copy-area {
+    background-color: #444;
+}
+
+#copy-area .container {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#copy-area .container p {
+    margin-bottom: 0;
+    color: white;
+}
+

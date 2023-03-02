@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS/Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- JS/Bootstrap -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Site Pokémon</title>
+</head>
+<body>
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="img/pokebola2.png" alt="Pokedex">Pokédex
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"   aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a href="#nav-item" class="nav-item nav-link" id="home-menu">Home</a>
+                        <a href="#nav-item" class="nav-item nav-link" id="about-pokemon">Pokémons</a>
+                        <a href="#nav-item" class="nav-item nav-link" id="team">Time</a>
+                        <a href="#nav-item" class="nav-item nav-link" id="contact">Contato</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainSlider" data-slide-to="1" class=""></li>
+                    <li data-target="#mainSlider" data-slide-to="2" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/pokemons_ash.jpg" class="d-block w-100" alt="Pokemons com Ash">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/tela_rhydon.jpg" class="d-block w-100" alt="Mapa do Mundo Pokemon">
+                    <div class="carousel-caption d-md-block">
+                        <h2>Você Sabia?</h2>
+                        <p>Em 1996 nascia um dos maiores fenômenos do mundo dos games — e talvez, inclusive, da cultura japonesa. Pokémon, a série criada pelo hoje consagrado Satoshi Taijiri, não demorou para estourar e se tornar um verdadeiro sucesso.</p>
+                        <p>De acordo com Ken Sugimori, principal ilustrador da série e amigo de Satoshi Taijiri, Rhydon foi o primeiro Pokémon a ser criado, ao lado de Lapras e Clefairy.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/ash_and_pikachu.jpg" class="d-block w-100" alt="Ash e Pikachu">
+                    <div class="carousel-caption d-md-block">
+                        <h2>Você Sabia?</h2>
+                        <p>Pikachu é um dos protagonistas do anime de Pokémon, sendo o parceiro e melhor amigo do garoto Ash Ketchum. Normalmente em Kanto, treinadores iniciantes escolhem entre um Bulbasaur, Charmander e Squirtle, mas o garoto Ash Ketchum acabou não podendo escolher nenhum dos três, já que todos foram escolhidos.</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="cards-pokemons">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Pokémons</h3>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/alakazam.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alakazam</h5>
+                                    <p class="card-text">Tem um nível incrivelmente alto de inteligência. Alguns dizem que Alakazam se lembra de tudo o que acontece com ele, desde o nascimento até a morte.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-psychic">Psíquico</li>
+                                    <li class="list-group-item">-----</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/bulbasaur.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bulbasaur</h5>
+                                    <p class="card-text">
+                                    Há uma semente de planta em suas costas desde o dia em que este Pokémon nasceu. A semente cresce lentamente.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-gram">Grama</li>
+                                    <li class="list-group-item type-toxic">Tóxico</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/dewgong.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dewgong</h5>
+                                    <p class="card-text">Todo o seu corpo é branco como a neve. Incólume até mesmo pelo frio intenso, ele nada poderosamente em águas geladas.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-water">Água</li>
+                                    <li class="list-group-item type-ice">Gelo</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/dragonite.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dragonite</h5>
+                                    <p class="card-text">Diz-se que em algum lugar no oceano existe uma ilha onde estes se reúnem. Só eles moram lá.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-dragon">Dragão</li>
+                                    <li class="list-group-item type-flying">Voador</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/hitmonlee.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hitmonlee</h5>
+                                    <p class="card-text">Este incrível Pokémon tem um incrível senso de equilíbrio. Pode chutar sucessivamente de qualquer posição.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-fighter">Lutador</li>
+                                    <li class="list-group-item">-----</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/jigglypuff.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jigglypuff</h5>
+                                    <p class="card-text">Quando seus olhos enormes vacilam, ela canta uma melodia misteriosamente reconfortante que embala seus inimigos para dormir.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-normal">Normal</li>
+                                    <li class="list-group-item type-fairy">Fada</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/kangaskhan.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kangaskhan</h5>
+                                    <p class="card-text">Embora esteja carregando seu bebê em uma bolsa em sua barriga, Kangaskhan é rápido em seus pés. Ele intimida seus oponentes com golpes rápidos.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-normal">Normal</li>
+                                    <li class="list-group-item">-----</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/meowth.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Meowth</h5>
+                                    <p class="card-text">Tudo o que faz é dormir durante o dia. À noite, patrulha seu território com os olhos brilhando.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-normal">Normal</li>
+                                    <li class="list-group-item">-----</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/pidgey.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pidgey</h5>
+                                    <p class="card-text">Muito dócil. Se atacado, muitas vezes chuta areia para se proteger, em vez de revidar.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-normal">Normal</li>
+                                    <li class="list-group-item type-flying">Voador</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/pikachu.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pikachu</h5>
+                                    <p class="card-text">Quando está com raiva, descarrega imediatamente a energia armazenada nas bolsas de suas bochechas.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-electric">Elétrico</li>
+                                    <li class="list-group-item">-----</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/poliwhirl.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Poliwhirl</h5>
+                                    <p class="card-text">Olhar para o redemoinho em sua barriga causa sonolência. Essa característica de Poliwhirl tem sido usada no lugar de canções de ninar para fazer as crianças dormirem.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-water">Água</li>
+                                    <li class="list-group-item">-----</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/psyduck.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Psyduck</h5>
+                                    <p class="card-text">É constantemente assolado por uma dor de cabeça. Quando a dor de cabeça fica intensa, ela começa a usar poderes misteriosos.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-water">Água</li>
+                                    <li class="list-group-item">-----</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/rhyhorn.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rhyhorn</h5>
+                                    <p class="card-text">
+                                    Forte, mas não muito brilhante, este Pokémon pode destruir até mesmo um arranha-céu com seus equipamentos de carregamento.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-ground">Chão</li>
+                                    <li class="list-group-item type-rock">Pedra</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/squirtle.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Squirtle</h5>
+                                    <p class="card-text">
+                                    Quando retrai seu longo pescoço em sua concha, esguicha água com força vigorosa.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-water">Água</li>
+                                    <li class="list-group-item">-----</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/staryu.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Staryu</h5>
+                                    <p class="card-text">
+                                    Se você visitar uma praia no final do verão, poderá ver grupos de Staryu se iluminando em um ritmo constante.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-water">Água</li>
+                                    <li class="list-group-item">-----</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-between">
+                            <div class="card">
+                                <img src="img/vulpix.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vulpix</h5>
+                                    <p class="card-text">Enquanto jovem, tem seis lindas caudas. Quando cresce, várias novas caudas brotam.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item type-li"><strong>Tipo</strong></li>
+                                    <li class="list-group-item type-fire">Fogo</li>
+                                    <li class="list-group-item">-----</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cards-time">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nosso time</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/misty.png" class="card-img-top" alt="Imagem de Perfil 1">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center"><strong>Misty</strong></h5>
+                                    <p class="card-text text-center">Treinadora Pokémon Junior.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/Ash.png" class="card-img-top" alt="Imagem de Perfil 1">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center"><strong>Ash</strong></h5>
+                                    <p class="card-text text-center">Treinador Pokémon Junior.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="img/brock.png" class="card-img-top" alt="Imagem de Perfil 1">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center"><strong>Brock</strong></h5>
+                                    <p class="card-text text-center">Treinador Pokémon Pleno.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="email">
+                <div class="container">
+                    <div class="col-12">
+                        <h3 class="main-title">Fique por dentro das novidades</h3>
+                    </div>
+                    <p>Assine nossa lista de e-mails, e receba nossos conteúdos sobre pokémons</p>
+                    <form action="" class="row justify-content-center align-items-center">
+                        <input type="email" class="form-control" name="email" id="email-input" placeholder="digite seu e-mail">
+                        <input type="submit" id="button-one" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Entre em contato conosco</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <ion-icon name="call-outline" style="font-size: 52px;"></ion-icon>
+                        <p><span class="contact-title">Ligue para:</span>(48)9999-9999</p>
+                        <p><span class="contact-title">Horários:</span>08:00 - 19:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <ion-icon name="at-outline" style="font-size: 52px;"></ion-icon>
+                        <p><span class="contact-title">Envie um e-mail:</span>contato@pokemons.com.br</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <ion-icon name="location-outline" style="font-size: 52px;"></ion-icon>
+                        <p><span class="contact-title">Venha tomar um café:</span>Rua Lorem Ipsum - 1314</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a href="https://github.com/GustavoCandotti" target="_blank">Gustavo Candotti</a> com imagens do <a href="https://www.pokemon.com/br/pokedex/">site</a> &copy;2023.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
